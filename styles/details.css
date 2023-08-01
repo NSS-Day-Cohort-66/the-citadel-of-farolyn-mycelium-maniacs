@@ -1,0 +1,71 @@
+#header {
+  text-align: left;
+  padding: 10px 20px;
+  background: #221100;
+  border-bottom: 3px solid #ddddcc;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+#header img {
+  height: 100px;
+  display: inline-block;
+  border: 3px;
+  border-style: outset;
+}
+#header .text {
+  display: inline-block;
+}
+#header h1 {
+  font-size: 60px;
+  color: #ddddcc;
+  height: 60px;
+  margin-left: 10px;
+}
+#header h3 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+body {
+  background-image: url("../images/stonebg.jpeg");
+  background-size: 250px 250px;
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+#lists_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#lists_container > div {
+  flex-basis: 25%;
+}
+.content_block {
+  background: #ddddcc;
+  padding: 20px;
+  border: 3px;
+  border-style: outset;
+  margin: 20px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+#archetypes_container > ul {
+  columns: 2;
+}
+
+li {
+  margin: 5px;
+}
+.content_block h3 {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+#message {
+  text-align: center;
+}
+
+li {
+  cursor: pointer;
+}
