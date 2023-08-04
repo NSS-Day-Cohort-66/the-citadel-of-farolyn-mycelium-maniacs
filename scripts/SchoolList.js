@@ -22,10 +22,25 @@ export const SchoolList = () => {
   headerHtml += `<ul>`;
 
   for (const school of schools) {
-    headerHtml += `<li>${school.name}</li>`;
+    headerHtml += `<li data-type="school"
+    data-id="${school.id}"
+    >${school.name}</li>`;
   }
 
   headerHtml += `</ul>`;
   headerHtml += `</div>`;
   return headerHtml;
 };
+
+document.addEventListener("click", (clickEvent) => {
+  const itemClicked = clickEvent.target;
+
+  if (itemClicked.dataset.type === "school") {
+    const detailsHtml = `
+      <div>
+      <h2> Description: </h2>
+        <p> ${schools.description}</p>
+      </div>
+    `;
+  }
+});
